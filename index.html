@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>마음거울</title>
+	<style type="text/css">
+		body{margin: 0; background-color: #E6EFC5;}
+		*{box-sizing: border-box;}
+		footer{background-color: black; height: 300px;}
+
+		/*텍스트*/
+		h1{font-size: 35pt; 
+			font-family: 'RIDIBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');  font-weight: normal; font-style: normal; margin-bottom: 10px;}
+		h2{font-size: 30pt; 
+			font-family: 'RIDIBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');  font-weight: normal; font-style: normal; margin-bottom: 20px;}
+		.explain,p{font-size: 18pt; 
+			font-family: 'RIDIBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');  font-weight: normal; font-style: normal; word-break: keep-all; 
+			line-height:1.55 ; margin: 0;}
+		#font25{font-size: 25pt;}
+		.textwhite{color: white;}
+		.textgreen1{color: #E6EFC5;}
+		.textgreen2{color: #7D9972;}
+		.textright{text-align: right;}
+		.textcenter{text-align: center;}
+		
+		/*배경*/
+		.back{width: 1200px; margin:auto;}
+		.height{height: 680px;}
+		.height2{height: 1360px;}
+		.white{background: white;}
+		.green1{background: #E6EFC5;}
+		.green2{background: #7D9972;}
+		.black{background: black;}
+
+		.flex{width: 1200px; margin: auto; display: flex; flex-wrap:wrap;}
+		.col-1{margin:0px 10px; width: 180px; }
+		.col-2{margin:0px 10px; width: 380px; }
+		.col-3{margin:0px 10px; width: 580px; }
+		.col-4{margin:0px 10px; width: 780px; }
+		.col-5{margin:0px 10px; width: 980px; }
+		.col-6{margin:0px 10px; width: 1180px; }
+		.bg-none{background: none;}
+
+		/*사진배경*/
+		.img2p{background-image: url('lines.png'); background-size: 100% 100%;}
+		.text3p{background-image: url('mirrorx2.png'); background-size: 100% auto;
+			background-attachment: fixed;
+			background-repeat: no-repeat;}
+		.opt1{background-image: url('option1.png'); background-size: 100% 100%;}
+		.opt2{background-image: url('option2.png'); background-size: 100% 100%;}
+		.opt3{background-image: url('option3.png'); background-size: 100% 100%;}
+		.box{background-image: url('box.png'); background-size: 100% 100%;}
+		.cautionimg{background-image: url('caution.png'); background-size: 100% 100%;}
+		.mirrorex{background-image: url('mindmirror.png'); background-size: 100% 100%;}
+
+		/*메뉴*/
+		menu{margin: 0; padding: 0;width: 1200px; color: white;}
+		li{display: inline; float: left; font-size: 20px;}
+		a{display: block; padding: 8px;}
+
+		/*이미지*/
+		/*1p 거울*/
+		.mirror0{position: relative; margin-left: 355px; margin-right: 355px;}
+		.mirror0_1{position: absolute;opacity: 0;margin-left: 355px; margin-right: 355px;}
+		.mirror0_1:hover{opacity: 1; transition: 1s;}
+
+		/*caution page*/
+		.caution{height: 1380px;}
+		.cautiontext{width: 500px; margin-top: 300px; margin-left: 350px; position: relative; height: 670px;}
+	</style>
+
+</head>
+<body>
+	<section class="black">
+	<div class="flex">
+		<menu>
+		<li><a href="#스토리">스토리</a></li>
+		<li><a href="#사용방법">사용방법</a></li>
+		<li><a href="#옵션">옵션</a></li>
+		<li><a href="#구성">구성</a></li>
+		<li><a href="#주의사항">주의사항</a></li>
+		</menu>
+	</div>
+	</section>
+	<section class="black">
+		<div class="flex back black">
+			<div class="mirror0">
+			<img style="width: 470px;" src="mirror2.png">
+			</div>
+			<div class="mirror0_1">
+			<img style="width: 470px;" src="22censor.png">
+			</div>
+			<div style="width: 1200px;">
+			<p class="textwhite textcenter">마음거울은 당신이 눈치채지 못한 마음을 읽어주는<br>감정분석 거울입니다.</p>
+			</div>
+		</div>
+		<div class="black" style="height:100px"></div>
+	</section>
+	<section class="white">
+	<div class="flex back green2 height img2p">
+		<div style="text-align:right; margin-top: 130px; padding-right:5px; justify-content: right;">
+			<h1 class="textgreen1" style="width: 1175px;">
+			"도대체 왜 이러는 거야?"</h1>
+			<p class="textwhite textright">
+				이유없이 기분이 안 좋을 때, 특정 상황에 왠지 모르게 속상할 때<br>정체를 알 수 없는 이 문제를 해결하고 싶다는 생각이 드신 적 있나요?</p>
+		</div>
+		<div style="padding-left: 37px; padding-top: 50px;">
+			<h1 class="textgreen1">
+			"나도 내 마음을 모르겠어"</h1>
+			<p class="textwhite">
+			혹시 실체를 알 수 없는 마음 속 무언가 때문에 고통받고 계시지는 않았나요?
+			</p>
+		</div>
+	</div>
+	</section>
+	<section class="text3p">
+	<div class="flex back bg-none height">
+		<div style="margin-left: 35px; margin-top: 40px">
+			<h1>"거울아 거울아"</h1>
+			<p>그럴 때는 마음거울을 보세요<br>마음거울이 당신의 마음을 보여드릴게요.</p>
+			<p>현실을 마주하는 것은 쉽지 않지만, 분명 도움이 됩니다.</p>
+		</div>
+	</div>
+	<div class="green1"></div>
+	</section>
+	<section style="background: linear-gradient(#E6EFC5,#7D9972);">
+
+	<div class="flex back mirrorex height2">
+		<div class="textcenter" style="width: 1200px; padding-top: 130px;">
+			<h2 class="textblack">현재상태</h2>
+			<p class="textgreen2">얼굴 근육의 미세한 움직임과 시선, 표정의 변화를 측정하고<br>데이터를 분석하여 당신의 마음을 알려드립니다.</p>
+		</div>
+		<div class="col-3 textcenter" style="padding-top:700px">
+			<h2 class="textgreen1">감정 분석</h2>
+			<p class="textwhite">현재 당신의 감정을 그래프로 보여드립니다.</p>
+		</div>
+		<div class="col-3 textcenter" style="padding-top:650px">
+			<h2 class="textgreen1">최근 감정 그래프</h2>
+			<p class="textwhite">최근 7일간의 감정 상태를 분석하여<br>
+				그래프와 글로 보여드립니다. <br> 당신의 감정 상태에 따라 도움이 될만한 <br>글귀와 해결방안을 제안합니다.</p>
+		</div>
+	</div>
+	</section>
+	<section class="green2">
+	<div class="green2 flex" style="height:100px"></div>
+	<div class="green1" style="height:1px"></div>
+	<div class="flex back green2 height">
+		<div class="textcenter" style="width: 1200px;padding-top: 122px;">
+		<p class="textgreen1" style="font-size: 30pt;">
+			사용방법</p>
+		</div>
+		<div class="col-2 textcenter">
+			<p>마음거울을 바라봅니다.</p>
+		</div>
+		<div class="col-2 textcenter">
+			<p>센서에 손을 대고 10초간 기다립니다.</p>
+		</div>
+		<div class="col-2 textcenter">
+			<p>이제 당신의 감정을 확인하세요!</p>
+		</div>
+	</div>
+	</section>
+	<section class="white">
+	<div class="flex back white opt1 height">
+		<div class="col-3" style="padding-top:113px;padding-left: 150px;">
+			<img src="mirror1.png" style="width: 342px;">
+		</div>
+		<div class="col-3" style="padding-top:210px">
+			<p id="font25">
+			Option1.<br>주머니에 쏙! 들어가는 소형 거울
+			</p>
+			<p class="explain">
+			바깥에서 내 마음을 확인하고 싶을 때 사용해요.<br>표정관리가 필요한 상황에서는 사용하지 않는 것을 권장합니다.
+			</p>
+		</div>
+	</div>
+	</section>
+	<section class="black">
+	<div class="flex back black opt2 height">
+		<div class="col-3">
+			<img src="mirror22.png" style="width:578px; padding-top:67px; padding-left:85px">
+			<!-- style="width: 465px;margin-top: 67px; margin-left:78px ;" -->
+		</div>
+		<div class="col-3">
+			<p class="textgreen1" id="font25"style="padding-top: 240px";>
+			Option2.<br>여기저기 두고 쓸 수 있는 탁상형 거울
+			</p>
+			<p class="explain"style="color:#E6EFC5;">
+			사무실에서, 학교에서, 방 안에서<br>
+			원하는 공간에 비치하고 사용할 수 있어요.
+			</p>
+		</div>
+	</div>
+	</section>
+	<section class="white">
+	<div class="flex back white opt3 height">
+		<div class="col-3" style="padding-top: 105px; padding-left: 75px;">
+			<img src="mirror3.png" style="width: 472px;">
+		</div>
+		<div class="col-3">
+			<p id="font25" style="padding-top: 235px;">
+			Option3.<br>벽에 걸고 사용할 수 있는 벽걸이 거울
+			</p>
+			<p class="explain">
+			외출하기 전, 혹은 외출하고 돌아온 후<br>
+			거울을 보고 마음을 확인해봐요.
+			</p>
+		</div>
+	</div>
+	</section>
+	<section class="green2">
+	<div class="flex back green1 box height">	
+		<div class="col-3">
+		</div>
+		<div class="col-3" style="padding-top: 125px;">
+			<p id="font25">
+				Special Option
+			</p>
+			<p style="font-size: 23pt;">
+				메세지를 적어주시면 엽서를 동봉해드려요.
+			</p>
+			<p>소중한 사람에게 따뜻한 메세지를 전달해보세요!</p>
+		</div>
+	</div>
+	</section>
+	<section class="white">
+		<div class="back white height textcenter" style="padding-top:122px;">
+			<p id="font25">
+				구성
+			</p>
+		</div>
+	</section>
+	<section class="green2">
+	<div class="flex caution green2 cautionimg">
+		<div class="cautiontext">
+			<h2 style="text-align: center; margin-bottom: 50px;">
+			 주의사항
+			</h2>
+		<div class="explain">
+			<p>1. 파손에 유의해주세요.</p>
+			<p>
+			2.타인의 마음은 읽을 수 없어요.</p>
+			<p>
+			3. 마음거울은 돌려 말하지 않아요. 혹시 자신의 실체를 알아버리고 싶지 않다면 구매를 삼가시는 것을 권장합니다.</p>
+			<p>
+			4. 배터리 충전은 전용 충전기를 사용해주세요.</p>
+			<p>
+			5. 충전 단자에 물이 들어가지 않도록 주의해주세요.</p>
+			<p>
+			6. 배터리가 충전되지 않으면, 감정분석이 불가능합니다. </p>
+			<p>
+			7. 충전시 교류 220V 이외에는 사용하지 마세요. </p>
+		</ol>
+		</div>
+		</div>
+	</section>
+	<footer>
+		
+	</footer>
+</body>
+</html>
