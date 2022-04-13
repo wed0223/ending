@@ -5,17 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>마음거울</title>
 	<style type="text/css">
+		html{font-family: 'RIDIBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');  font-weight: normal; font-style: normal;}
 		body{margin: 0; background-color: #E6EFC5;}
 		*{box-sizing: border-box;}
 		footer{background-color: black; height: 300px;}
+		
 
 		/*텍스트*/
-		h1{font-size: 35pt; 
-			font-family: 'RIDIBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');  font-weight: normal; font-style: normal; margin-bottom: 10px;}
-		h2{font-size: 30pt; 
-			font-family: 'RIDIBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');  font-weight: normal; font-style: normal; margin-bottom: 20px;}
-		.explain,p{font-size: 18pt; 
-			font-family: 'RIDIBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');  font-weight: normal; font-style: normal; word-break: keep-all; 
+		h1{font-size: 35pt; margin-bottom: 10px;}
+		h2{font-size: 30pt; margin-bottom: 20px;}
+		.explain,p{font-size: 18pt; word-break: keep-all; 
 			line-height:1.55 ; margin: 0;}
 		#font25{font-size: 25pt;}
 		.textwhite{color: white;}
@@ -28,11 +27,14 @@
 		.back{width: 1200px; margin:auto;}
 		.height{height: 680px;}
 		.height2{height: 1360px;}
+		.width{width: 1200px;}
 		.white{background: white;}
 		.green1{background: #E6EFC5;}
 		.green2{background: #7D9972;}
 		.black{background: black;}
-
+		.color0{height:50px}
+		.color1{height:100px}
+		
 		.flex{width: 1200px; margin: auto; display: flex; flex-wrap:wrap;}
 		.col-1{margin:0px 10px; width: 180px; }
 		.col-2{margin:0px 10px; width: 380px; }
@@ -55,15 +57,32 @@
 		.mirrorex{background-image: url('mindmirror.png'); background-size: 100% 100%;}
 
 		/*메뉴*/
-		menu{margin: 0; padding: 0;width: 1200px; color: white;}
+		menu{margin: 0; padding: 0;}
 		li{display: inline; float: left; font-size: 20px;}
 		a{display: block; padding: 8px;}
 
 		/*이미지*/
 		/*1p 거울*/
 		.mirror0{position: relative; margin-left: 355px; margin-right: 355px;}
-		.mirror0_1{position: absolute;opacity: 0;margin-left: 355px; margin-right: 355px;}
-		.mirror0_1:hover{opacity: 1; transition: 1s;}
+		.mirror0_1{position: absolute;opacity: 0;margin-left: 355px; margin-right: 355px;
+			animation: opacity 4s cubic-bezier(.44,.08,.5,1.03) infinite alternate;}
+
+		/*Option 거울 호버*/
+		.optionhov1_0{position: relative; padding-top:113px;padding-left: 150px;}
+		.optionhov1_1{position: absolute; padding-top:113px;padding-left: 150px; opacity: 0;}
+		.optionhov2_0{position: relative; width:578px; padding-top:67px; padding-left:85px}
+		.optionhov2_1{position: absolute; width:578px; padding-top:67px; padding-left:95px; opacity: 0;}
+		.optionhov3_0{position: relative;}
+		.optionhov3_1{position: absolute}
+
+		.optionhov2_1:hover{opacity: 1; transition: 1s;}
+
+		@keyframes opacity{
+			from{opacity: 0;} to{opacity: 1;}
+		}
+		
+		/*버튼*/
+		.clickbutton{border: 1px solid #7D9972; border-radius: 20px; font-size: 18pt; background: none;font-family: 'RIDIBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');  font-weight: normal; font-style: normal; color:#7D9972;}
 
 		/*caution page*/
 		.caution{height: 1380px;}
@@ -72,7 +91,7 @@
 
 </head>
 <body>
-	<section class="black">
+	<section class="green1" style="position: fixed;">
 	<div class="flex">
 		<menu>
 		<li><a href="#스토리">스토리</a></li>
@@ -84,6 +103,7 @@
 	</div>
 	</section>
 	<section class="black">
+		<div class="black color0"></div>
 		<div class="flex back black">
 			<div class="mirror0">
 			<img style="width: 470px;" src="mirror2.png">
@@ -94,12 +114,12 @@
 			<div style="width: 1200px;">
 			<p class="textwhite textcenter">마음거울은 당신이 눈치채지 못한 마음을 읽어주는<br>감정분석 거울입니다.</p>
 			</div>
+		<div class="black color1"></div>
 		</div>
-		<div class="black" style="height:100px"></div>
 	</section>
-	<section class="white">
+	<section class="green2">
 	<div class="flex back green2 height img2p">
-		<div style="text-align:right; margin-top: 130px; padding-right:5px; justify-content: right;">
+		<div class="textright" style="margin-top: 130px; padding-right:5px; justify-content: right;">
 			<h1 class="textgreen1" style="width: 1175px;">
 			"도대체 왜 이러는 거야?"</h1>
 			<p class="textwhite textright">
@@ -163,7 +183,7 @@
 	</section>
 	<section class="white">
 	<div class="flex back white opt1 height">
-		<div class="col-3" style="padding-top:113px;padding-left: 150px;">
+		<div class="col-3 optionhov1_0">
 			<img src="mirror1.png" style="width: 342px;">
 		</div>
 		<div class="col-3" style="padding-top:210px">
@@ -179,9 +199,10 @@
 	<section class="black">
 	<div class="flex back black opt2 height">
 		<div class="col-3">
-			<img src="mirror22.png" style="width:578px; padding-top:67px; padding-left:85px">
-			<!-- style="width: 465px;margin-top: 67px; margin-left:78px ;" -->
+			<img src="mirror22.png" class="optionhov2_0">
 		</div>
+			<img src="2censor.png" class="optionhov2_1">
+			
 		<div class="col-3">
 			<p class="textgreen1" id="font25"style="padding-top: 240px";>
 			Option2.<br>여기저기 두고 쓸 수 있는 탁상형 거울
@@ -213,14 +234,22 @@
 	<div class="flex back green1 box height">	
 		<div class="col-3">
 		</div>
-		<div class="col-3" style="padding-top: 125px;">
-			<p id="font25">
+
+		<div class="col-3">
+			<div>
+			<p id="font25" style="padding-top: 110px;">
 				Special Option
 			</p>
-			<p style="font-size: 23pt;">
+			<p style="font-size: 22pt;">
 				메세지를 적어주시면 엽서를 동봉해드려요.
 			</p>
 			<p>소중한 사람에게 따뜻한 메세지를 전달해보세요!</p>
+			</div>
+
+			<div>
+			<input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10">
+			<input class="clickbutton" type="button" onclick="alert('저장되었습니다.')" value="저장하기"></div>
 		</div>
 	</div>
 	</section>
