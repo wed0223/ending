@@ -9,7 +9,7 @@
 		body{margin: 0; background-color: #E6EFC5;}
 		*{box-sizing: border-box;}
 		footer{background-color: black; height: 300px;}
-		
+
 
 		/*텍스트*/
 		h1{font-size: 35pt; margin-bottom: 10px;}
@@ -57,7 +57,7 @@
 		.mirrorex{background-image: url('mindmirror.png'); background-size: 100% 100%;}
 
 		/*메뉴*/
-		menu{margin: 0; padding: 0;}
+		menu{display:flex ; flex-wrap: wrap;margin: 0; padding: 0;}
 		li{display: inline; float: left; font-size: 20px;}
 		a{display: block; padding: 8px;}
 
@@ -101,7 +101,6 @@
 		</menu>
 	</div>
 	</section> -->
-	
 	<section class="black">
 		<div class="black color0"></div>
 		<div class="flex back black">
@@ -118,7 +117,7 @@
 		</div>
 	</section>
 	<section class="green2">
-	<div class="flex back green2 height img2p">
+	<div class="flex back green2 height"  style="background-attachment: fixed;">
 		<div class="textright" style="margin-top: 130px; padding-right:5px; justify-content: right;">
 			<h1 class="textgreen1" style="width: 1175px;">
 			"도대체 왜 이러는 거야?"</h1>
@@ -133,6 +132,7 @@
 			</p>
 		</div>
 	</div>
+	<div class="color0 green2"></div>
 	</section>
 	<section class="text3p">
 	<div class="flex back bg-none height">
@@ -201,8 +201,9 @@
 		<div class="col-3">
 			<img src="mirror22.png" class="optionhov2_0">
 		</div>
-			<img src="2censor.png" class="optionhov2_1">
-			
+		<div class="col-3" style="position: absolute;">
+			<img src="2censor.png" class=" optionhov2_1">
+		</div>	
 		<div class="col-3">
 			<p class="textgreen1" id="font25"style="padding-top: 240px";>
 			Option2.<br>여기저기 두고 쓸 수 있는 탁상형 거울
